@@ -2,7 +2,7 @@ FROM alpine:3.8
 
 RUN apk update && \
 apk upgrade && \
-apk add --no-cache ca-certificates wget bash git openssh ruby ruby-bundler ruby-dev && \
+apk add --no-cache ca-certificates wget bash git openssh ruby ruby-bundler ruby-dev ruby-json && \
 update-ca-certificates
 
 RUN gem install puppet-lint --no-document
